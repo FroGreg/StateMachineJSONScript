@@ -22,7 +22,7 @@ def GetJSONFromFile(t_fileName: str, t_fileList: list[str]) -> dict:
   
   char: str = ""
   fileNameJSON = t_fileName + ".json"
-  defaultJSON: dict = {"states": {}, "startstate": ""}
+  defaultJSON: dict = {"states": {}, "startstate": "", "endstates": []}
   if(t_fileName not in t_fileList):
     print(f"{fileNameJSON} successfully created.")
     newFile = open(fileNameJSON, "w+")
